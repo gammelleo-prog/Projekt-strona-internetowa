@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przepisy | Babeczkowy Zakątek</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="strona-przepisy">
+<header class="naglowek">
+    <a class="link" href="index.html">
+        <img class="logo-obrazek" src="zdjęcia/logo.jpg" alt="Babeczka">
+        <span>Babeczkowy Zakątek</span>
+    </a>
+    <nav>
+        <a href="index.html">Start</a>
+        <a class="strona" href="przepisy.html">Przepisy</a>
+        <a href="ulubione.html">Ulubione</a>
+    </nav>
+</header>
+
+<main>
+    <section class="wstep-podstrony">
+        <p class="przepisy-naglowek">SŁODKA STREFA</p>
+        <h1>Przepisy na babeczki</h1>
+        <p>Wybierz przepis i dodaj go do ulubionych.</p>
+    </section>
+
+    <section class="lista-kart-przepisow">
+        <article class="karta-przepisu" id="przepis-1">
+            <img class="zdjecie-przepisu" src="zdjęcia/1.jpg" alt="Babeczki Leśny Mech">
+            <div class="tresc-przepisu">
+                <p class="przepisy-naglowek">Ania Gotuje</p>
+                <h2>Babeczki Leśny Mech</h2>
+                <p class="opis-przepisu">Babeczki o intensywnie zielonym kolorze, przygotowane ze szpinakiem i udekorowane owocami.</p>
+
+                <p><strong>Czas:</strong> 30 min + 30 min pieczenia</p>
+                <p><strong>Porcje:</strong> około 12</p>
+
+                <button class="przycisk-ulubionych" onclick="dodajDoUlubionych()">Dodaj do ulubionych</button>
+
+                <h3>Składniki</h3>
+                <ul>
+                        <li>240 g mąki pszennej tortowej</li>
+                        <li>200 g młodego szpinaku</li>
+                        <li>170 g cukru drobnego</li>
+                        <li>3 średniej wielkości jajka</li>
+                        <li>120 ml oleju roślinnego</li>
+                        <li>po 1 płaskiej łyżeczce proszku do pieczenia i sody oczyszczonej</li>
+                        <li>2 opakowania serka Zott Primo Cremoness z wanilią</li>
+                        <li>maliny, borówki, truskawki</li>
+                </ul>
+
+                <h3>Przygotowanie</h3>
+                <ol>
+                        <li>Przygotuj ciasto ze składników i połącz je dokładnie.</li>
+                        <li>Rozdziel ciasto do papilotek.</li>
+                        <li>Piecz około 30 minut.</li>
+                        <li>Po wystudzeniu udekoruj serkiem i owocami.</li>
+                </ol>
+
+                <a class="link-do-zrodla-przepisu" href="https://aniagotuje.pl/przepis/babeczki-lesny-mech" target="_blank" rel="noopener noreferrer">Link do źródła</a>
+            </div>
+        </article>
+
+        <article class="karta-przepisu" id="przepis-2">
+            <img class="zdjecie-przepisu" src="zdjęcia/2.jpg" alt="Babeczki czekoladowe">
+            <div class="tresc-przepisu">
+                <p class="przepisy-naglowek">Ania Gotuje</p>
+                <h2>Babeczki czekoladowe</h2>
+                <p class="opis-przepisu">Super proste babeczki czekoladowe, które nie wymagają nawet miksera.</p>
+
+                <p><strong>Czas:</strong> 15 min + 25 min pieczenia</p>
+                <p><strong>Porcje:</strong> 10</p>
+
+                <button class="przycisk-ulubionych" onclick="dodajDoUlubionych()">Dodaj do ulubionych</button>
+
+                <h3>Składniki</h3>
+                <ul>
+                        <li>Składniki według przepisu źródłowego</li>
+                        <li>czekolada i kakao według przepisu</li>
+                </ul>
+
+                <h3>Przygotowanie</h3>
+                <ol>
+                        <li>Połącz składniki według przepisu.</li>
+                        <li>Przełóż masę do papilotek.</li>
+                        <li>Piecz około 25 minut.</li>
+                </ol>
+
+                <a class="link-do-zrodla-przepisu" href="https://aniagotuje.pl/przepis/babeczki-czekoladowe" target="_blank" rel="noopener noreferrer">Link do źródła</a>
+            </div>
+        </article>
+
+        <article class="karta-przepisu" id="przepis-3">
+            <img class="zdjecie-przepisu" src="zdjęcia/3.jpg" alt="Babeczki pistacjowe">
+            <div class="tresc-przepisu">
+                <p class="przepisy-naglowek">Moje Wypieki</p>
+                <h2>Babeczki pistacjowe</h2>
+                <p class="opis-przepisu">Pistacjowe babeczki z kremem pistacjowym, malinami i posiekanymi pistacjami.</p>
+
+                <p><strong>Czas:</strong> około 25 min pieczenia</p>
+                <p><strong>Porcje:</strong> około 12</p>
+
+                <button class="przycisk-ulubionych" onclick="dodajDoUlubionych()">Dodaj do ulubionych</button>
+
+                <h3>Składniki</h3>
+                <ul>
+                        <li>125 g masła</li>
+                        <li>110 g drobnego cukru</li>
+                        <li>2 duże jajka</li>
+                        <li>150 g mąki pszennej tortowej</li>
+                        <li>1,5 łyżeczki proszku do pieczenia</li>
+                        <li>60 g zmielonych niesolonych pistacji</li>
+                        <li>45 ml mleka</li>
+                        <li>1 łyżeczka ekstraktu z wanilii</li>
+                        <li>skórka z połowy cytryny</li>
+                        <li>200 g serka kremowego lub mascarpone</li>
+                        <li>200 g kremu pistacjowego</li>
+                </ul>
+
+                <h3>Przygotowanie</h3>
+                <ol>
+                        <li>Utrzyj masło z cukrem. Dodawaj jajka jedno po drugim.</li>
+                        <li>Dodaj przesianą mąkę z proszkiem, pistacje, mleko, wanilię i skórkę z cytryny.</li>
+                        <li>Rozdziel ciasto do papilotek do około 3/4 wysokości.</li>
+                        <li>Piecz około 25 minut w 170°C.</li>
+                        <li>Wystudź i udekoruj kremem pistacjowym, malinami i pistacjami.</li>
+                </ol>
+
+                <a class="link-do-zrodla-przepisu" href="https://mojewypieki.com/przepis/babeczki-pistacjowe" target="_blank" rel="noopener noreferrer">Link do źródła</a>
+            </div>
+        </article>
+
+        <article class="karta-przepisu" id="przepis-4">
+            <img class="zdjecie-przepisu" src="zdjęcia/4.jpg" alt="Babeczki brownie z truskawkami">
+            <div class="tresc-przepisu">
+                <p class="przepisy-naglowek">Moje Wypieki</p>
+                <h2>Babeczki brownie z truskawkami</h2>
+                <p class="opis-przepisu">Czekoladowe brownie z połówką truskawki na każdej babeczce.</p>
+
+                <p><strong>Czas:</strong> około 23 min pieczenia</p>
+                <p><strong>Porcje:</strong> 10–12</p>
+
+                <button class="przycisk-ulubionych" onclick="dodajDoUlubionych()">Dodaj do ulubionych</button>
+
+                <h3>Składniki</h3>
+                <ul>
+                        <li>200 g gorzkiej czekolady</li>
+                        <li>100 g masła</li>
+                        <li>4 duże jajka</li>
+                        <li>200 g cukru muscovado</li>
+                        <li>100 g mąki pszennej</li>
+                        <li>1/4 łyżeczki proszku do pieczenia</li>
+                        <li>1 łyżeczka ekstraktu z wanilii</li>
+                        <li>5–6 dużych truskawek</li>
+                </ul>
+
+                <h3>Przygotowanie</h3>
+                <ol>
+                        <li>Roztop masło, dodaj posiekaną czekoladę i wymieszaj.</li>
+                        <li>Wymieszaj jajka z cukrem, dodaj sos czekoladowy.</li>
+                        <li>Dodaj wanilię, mąkę i proszek do pieczenia.</li>
+                        <li>Przełóż masę do papilotek i połóż na wierzchu połówkę truskawki.</li>
+                        <li>Piecz około 23 minuty w 180°C.</li>
+                </ol>
+
+                <a class="link-do-zrodla-przepisu" href="https://mojewypieki.com/przepis/babeczki-brownie-z-truskawkami" target="_blank" rel="noopener noreferrer">Link do źródła</a>
+            </div>
+        </article>
+
+        <article class="karta-przepisu" id="przepis-5">
+            <img class="zdjecie-przepisu" src="zdjęcia/5.jpg" alt="Babeczki brownie z Nutellą i malinami">
+            <div class="tresc-przepisu">
+                <p class="przepisy-naglowek">Moje Wypieki</p>
+                <h2>Babeczki brownie z Nutellą i malinami</h2>
+                <p class="opis-przepisu">Proste brownie z Nutellą, malinami i kremem z Nutelli.</p>
+
+                <p><strong>Czas:</strong> 19–20 min pieczenia</p>
+                <p><strong>Porcje:</strong> 11–12</p>
+
+                <button class="przycisk-ulubionych" onclick="dodajDoUlubionych()">Dodaj do ulubionych</button>
+
+                <h3>Składniki</h3>
+                <ul>
+                        <li>2 duże jajka</li>
+                        <li>400 g Nutelli</li>
+                        <li>250 g malin</li>
+                        <li>250 g serka kremowego Philadelphia</li>
+                        <li>200 g Nutelli do kremu</li>
+                </ul>
+
+                <h3>Przygotowanie</h3>
+                <ol>
+                        <li>Ubij jajka na bardzo puszystą pianę.</li>
+                        <li>Dodaj Nutellę i dokładnie wymieszaj.</li>
+                        <li>Przełóż masę do papilotek.</li>
+                        <li>Piecz 19–20 minut w 180°C.</li>
+                        <li>Po wystudzeniu dodaj maliny i krem z Nutelli.</li>
+                </ol>
+
+                <a class="link-do-zrodla-przepisu" href="https://mojewypieki.com/przepis/babeczki-brownie-z-nutella-i-malinami" target="_blank" rel="noopener noreferrer">Link do źródła</a>
+            </div>
+        </article>
+
+        <article class="karta-przepisu" id="przepis-6">
+            <img class="zdjecie-przepisu" src="zdjęcia/6.jpg" alt="Babeczki mango z kremem kokosowym">
+            <div class="tresc-przepisu">
+                <p class="przepisy-naglowek">Moje Wypieki</p>
+                <h2>Babeczki mango z kremem kokosowym</h2>
+                <p class="opis-przepisu">Jogurtowe babeczki z mango, kremem kokosowym, limonką i świeżym mango.</p>
+
+                <p><strong>Czas:</strong> około 25 min pieczenia</p>
+                <p><strong>Porcje:</strong> około 12</p>
+
+                <button class="przycisk-ulubionych" onclick="dodajDoUlubionych()">Dodaj do ulubionych</button>
+
+                <h3>Składniki</h3>
+                <ul>
+                        <li>100 g masła</li>
+                        <li>3/4 szklanki cukru</li>
+                        <li>1 duże jajko</li>
+                        <li>200 g puree z mango</li>
+                        <li>pół szklanki jogurtu naturalnego</li>
+                        <li>250 g mąki pszennej</li>
+                        <li>2 łyżeczki proszku do pieczenia</li>
+                        <li>125 g mascarpone</li>
+                        <li>300 ml śmietany kremówki 36%</li>
+                        <li>3 łyżki cukru pudru</li>
+                </ul>
+
+                <h3>Przygotowanie</h3>
+                <ol>
+                        <li>Utrzyj masło z cukrem, dodaj jajko, puree z mango i jogurt.</li>
+                        <li>Dodaj mąkę z proszkiem do pieczenia.</li>
+                        <li>Przełóż ciasto do papilotek do 2/3 wysokości.</li>
+                        <li>Piecz około 25 minut w 165°C.</li>
+                        <li>Po wystudzeniu udekoruj kremem kokosowym i mango.</li>
+                </ol>
+
+                <a class="link-do-zrodla-przepisu" href="https://mojewypieki.com/przepis/babeczki-mango-z-kremem-kokosowym" target="_blank" rel="noopener noreferrer">Link do źródła</a>
+            </div>
+        </article>
+
+        <article class="karta-przepisu" id="przepis-7">
+            <img class="zdjecie-przepisu" src="zdjęcia/7.jpg" alt="Babeczki cappuccino">
+            <div class="tresc-przepisu">
+                <p class="przepisy-naglowek">Moje Wypieki</p>
+                <h2>Babeczki cappuccino</h2>
+                <p class="opis-przepisu">Delikatne babeczki z kawą, wanilią i kremem śmietankowym.</p>
+
+                <p><strong>Czas:</strong> około 25 min pieczenia</p>
+                <p><strong>Porcje:</strong> około 10–12</p>
+
+                <button class="przycisk-ulubionych" onclick="dodajDoUlubionych()">Dodaj do ulubionych</button>
+
+                <h3>Składniki</h3>
+                <ul>
+                        <li>125 g masła</li>
+                        <li>125 g cukru</li>
+                        <li>2 duże jajka</li>
+                        <li>1 łyżeczka ekstraktu z wanilii</li>
+                        <li>1 czubata łyżeczka instant espresso</li>
+                        <li>2–3 łyżki mleka</li>
+                        <li>125 g mąki pszennej</li>
+                        <li>1,5 łyżeczki proszku do pieczenia</li>
+                        <li>250 ml śmietanki kremówki 36%</li>
+                        <li>125 g mascarpone</li>
+                </ul>
+
+                <h3>Przygotowanie</h3>
+                <ol>
+                        <li>Utrzyj masło z cukrem i dodawaj jajka.</li>
+                        <li>Dodaj wanilię i kawę rozpuszczoną w mleku.</li>
+                        <li>Dodaj mąkę z proszkiem do pieczenia.</li>
+                        <li>Piecz około 25 minut w 160°C.</li>
+                        <li>Po wystudzeniu udekoruj kremem i kakao.</li>
+                </ol>
+
+                <a class="link-do-zrodla-przepisu" href="https://mojewypieki.com/przepis/babeczki-cappuccino" target="_blank" rel="noopener noreferrer">Link do źródła</a>
+            </div>
+        </article>
+
+        <article class="karta-przepisu" id="przepis-8">
+            <img class="zdjecie-przepisu" src="zdjęcia/8.jpg" alt="Kubeczki brownie z Toffifee">
+            <div class="tresc-przepisu">
+                <p class="przepisy-naglowek">Moje Wypieki</p>
+                <h2>Kubeczki brownie z Toffifee</h2>
+                <p class="opis-przepisu">Mini brownie z czekoladą i pralinką Toffifee.</p>
+
+                <p><strong>Czas:</strong> około 10 min pieczenia</p>
+                <p><strong>Porcje:</strong> 24 mini</p>
+
+                <button class="przycisk-ulubionych" onclick="dodajDoUlubionych()">Dodaj do ulubionych</button>
+
+                <h3>Składniki</h3>
+                <ul>
+                        <li>100 g gorzkiej czekolady</li>
+                        <li>100 g masła</li>
+                        <li>2 jajka</li>
+                        <li>180 g drobnego cukru</li>
+                        <li>100 g mąki pszennej</li>
+                        <li>3/4 łyżeczki proszku do pieczenia</li>
+                        <li>1 łyżeczka ekstraktu z wanilii</li>
+                        <li>24 pralinki Toffifee</li>
+                </ul>
+
+                <h3>Przygotowanie</h3>
+                <ol>
+                        <li>Roztop masło z czekoladą.</li>
+                        <li>Wymieszaj jajka z cukrem, dodaj czekoladę, wanilię, mąkę i proszek.</li>
+                        <li>Przełóż masę do mini-muffinów.</li>
+                        <li>Piecz około 10 minut w 180°C.</li>
+                        <li>W gorące brownie wciśnij pralinki Toffifee.</li>
+                </ol>
+
+                <a class="link-do-zrodla-przepisu" href="https://mojewypieki.com/przepis/kubeczki-brownie-z-toffifee" target="_blank" rel="noopener noreferrer">Link do źródła</a>
+            </div>
+        </article>
+
+        <article class="karta-przepisu" id="przepis-9">
+            <img class="zdjecie-przepisu" src="zdjęcia/9.jpg" alt="Kubeczki z orzechami laskowymi">
+            <div class="tresc-przepisu">
+                <p class="przepisy-naglowek">Moje Wypieki</p>
+                <h2>Kubeczki z orzechami laskowymi</h2>
+                <p class="opis-przepisu">Kruche mini kubeczki z gęstym nadzieniem z orzechów laskowych.</p>
+
+                <p><strong>Czas:</strong> 17–20 min pieczenia</p>
+                <p><strong>Porcje:</strong> 24 mini</p>
+
+                <button class="przycisk-ulubionych" onclick="dodajDoUlubionych()">Dodaj do ulubionych</button>
+
+                <h3>Składniki</h3>
+                <ul>
+                        <li>300 g mąki pszennej</li>
+                        <li>150 g zimnego masła</li>
+                        <li>2 żółtka</li>
+                        <li>100 g cukru pudru</li>
+                        <li>szczypta soli</li>
+                        <li>1 i 1/3 szklanki orzechów laskowych</li>
+                        <li>2/3 szklanki jasnego brązowego cukru</li>
+                        <li>1 duże jajko</li>
+                        <li>15 g masła</li>
+                        <li>2 łyżeczki ekstraktu z wanilii</li>
+                </ul>
+
+                <h3>Przygotowanie</h3>
+                <ol>
+                        <li>Zagnieć kruche ciasto i schłodź je w lodówce.</li>
+                        <li>Wyłóż ciastem formę na mini-muffiny.</li>
+                        <li>Przygotuj nadzienie z orzechów, cukru, jajka, masła i wanilii.</li>
+                        <li>Wypełnij ciastem wgłębienia i dodaj po orzeszku.</li>
+                        <li>Piecz 17–20 minut w 180°C.</li>
+                </ol>
+
+                <a class="link-do-zrodla-przepisu" href="https://mojewypieki.com/przepis/kubeczki-z-orzechami-laskowymi" target="_blank" rel="noopener noreferrer">Link do źródła</a>
+            </div>
+        </article>
+
+        <article class="karta-przepisu" id="przepis-10">
+            <img class="zdjecie-przepisu" src="zdjęcia/10.jpg" alt="Babeczki z porzeczkami">
+            <div class="tresc-przepisu">
+                <p class="przepisy-naglowek">Moje Wypieki</p>
+                <h2>Babeczki z porzeczkami</h2>
+                <p class="opis-przepisu">Czekoladowe babeczki z czerwoną porzeczką i polewą czekoladową.</p>
+
+                <p><strong>Czas:</strong> 30–35 min pieczenia</p>
+                <p><strong>Porcje:</strong> około 12</p>
+
+                <button class="przycisk-ulubionych" onclick="dodajDoUlubionych()">Dodaj do ulubionych</button>
+
+                <h3>Składniki</h3>
+                <ul>
+                        <li>1 szklanka mąki pszennej tortowej</li>
+                        <li>pół szklanki kakao</li>
+                        <li>1 łyżeczka sody oczyszczonej</li>
+                        <li>1 szklanka brązowego cukru</li>
+                        <li>pół szklanki majonezu</li>
+                        <li>pół szklanki mleka</li>
+                        <li>2 łyżeczki kawy rozpuszczalnej</li>
+                        <li>200 g czerwonej porzeczki</li>
+                        <li>100 ml śmietanki kremówki 36%</li>
+                        <li>100 g gorzkiej czekolady</li>
+                </ul>
+
+                <h3>Przygotowanie</h3>
+                <ol>
+                        <li>Zaparz kawę we wrzącym mleku i ostudź.</li>
+                        <li>Wymieszaj majonez, kawę i cukier.</li>
+                        <li>Dodaj mąkę, kakao i sodę, a następnie porzeczki.</li>
+                        <li>Przełóż ciasto do papilotek.</li>
+                        <li>Piecz około 30–35 minut w 170°C.</li>
+                        <li>Po wystudzeniu udekoruj polewą czekoladową i porzeczkami.</li>
+                </ol>
+
+                <a class="link-do-zrodla-przepisu" href="https://mojewypieki.com/przepis/babeczki-z-porzeczkami" target="_blank" rel="noopener noreferrer">Link do źródła</a>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>Babeczkowy Zakątek - Julia Stępień</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

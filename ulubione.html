@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulubione | Babeczkowy Zakątek</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="gorny-pasek">
+    <a class="logo-link" href="index.html">
+        <img class="logo-obrazek" src="zdjęcia/logo.jpg" alt="Babeczka">
+        <span>Babeczkowy Zakątek</span>
+    </a>
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="przepisy.html">Przepisy</a>
+        <a class="aktywna-strona" href="ulubione.html">Ulubione</a>
+    </nav>
+</header>
+
+<main>
+    <section class="wstep-podstrony">
+        <p class="maly-naglowek">TWOJE WYBORY</p>
+        <h1>Ulubione przepisy</h1>
+        <p>Tutaj znajdziesz przykładowe ulubione przepisy.</p>
+    </section>
+
+    <p class="brak-ulubionych" id="brakUlubionych">Nie masz jeszcze żadnych ulubionych przepisów.</p>
+
+    <section class="lista-ulubionych">
+        <article class="karta-ulubiona" id="ulubiony1">
+            <img src="zdjęcia/1.jpg" alt="Babeczki Leśny Mech">
+            <div class="tresc-ulubionej">
+                <h2>Babeczki Leśny Mech</h2>
+                <a class="przycisk-link" href="przepisy.html#przepis-1">Zobacz przepis</a>
+                <button class="przycisk-usun" onclick="usunZUlubionych()">Usuń z ulubionych</button>
+            </div>
+        </article>
+        <article class="karta-ulubiona" id="ulubiony2">
+            <img src="zdjęcia/2.jpg" alt="Babeczki czekoladowe">
+            <div class="tresc-ulubionej">
+                <h2>Babeczki czekoladowe</h2>
+                <a class="przycisk-link" href="przepisy.html#przepis-2">Zobacz przepis</a>
+                <button class="przycisk-usun" onclick="usunZUlubionych()">Usuń z ulubionych</button>
+            </div>
+        </article>
+        <article class="karta-ulubiona" id="ulubiony3">
+            <img src="zdjęcia/3.jpg" alt="Babeczki pistacjowe">
+            <div class="tresc-ulubionej">
+                <h2>Babeczki pistacjowe</h2>
+                <a class="przycisk-link" href="przepisy.html#przepis-3">Zobacz przepis</a>
+                <button class="przycisk-usun" onclick="usunZUlubionych()">Usuń z ulubionych</button>
+            </div>
+        </article>
+        <article class="karta-ulubiona" id="ulubiony4">
+            <img src="zdjęcia/4.jpg" alt="Babeczki brownie z truskawkami">
+            <div class="tresc-ulubionej">
+                <h2>Babeczki brownie z truskawkami</h2>
+                <a class="przycisk-link" href="przepisy.html#przepis-4">Zobacz przepis</a>
+                <button class="przycisk-usun" onclick="usunZUlubionych()">Usuń z ulubionych</button>
+            </div>
+        </article>
+        <article class="karta-ulubiona" id="ulubiony5">
+            <img src="zdjęcia/5.jpg" alt="Babeczki brownie z Nutellą i malinami">
+            <div class="tresc-ulubionej">
+                <h2>Babeczki brownie z Nutellą i malinami</h2>
+                <a class="przycisk-link" href="przepisy.html#przepis-5">Zobacz przepis</a>
+                <button class="przycisk-usun" onclick="usunZUlubionych()">Usuń z ulubionych</button>
+            </div>
+        </article>
+        <article class="karta-ulubiona" id="ulubiony6">
+            <img src="zdjęcia/6.jpg" alt="Babeczki mango z kremem kokosowym">
+            <div class="tresc-ulubionej">
+                <h2>Babeczki mango z kremem kokosowym</h2>
+                <a class="przycisk-link" href="przepisy.html#przepis-6">Zobacz przepis</a>
+                <button class="przycisk-usun" onclick="usunZUlubionych()">Usuń z ulubionych</button>
+            </div>
+        </article>
+        <article class="karta-ulubiona" id="ulubiony7">
+            <img src="zdjęcia/7.jpg" alt="Babeczki cappuccino">
+            <div class="tresc-ulubionej">
+                <h2>Babeczki cappuccino</h2>
+                <a class="przycisk-link" href="przepisy.html#przepis-7">Zobacz przepis</a>
+                <button class="przycisk-usun" onclick="usunZUlubionych()">Usuń z ulubionych</button>
+            </div>
+        </article>
+        <article class="karta-ulubiona" id="ulubiony8">
+            <img src="zdjęcia/8.jpg" alt="Kubeczki brownie z Toffifee">
+            <div class="tresc-ulubionej">
+                <h2>Kubeczki brownie z Toffifee</h2>
+                <a class="przycisk-link" href="przepisy.html#przepis-8">Zobacz przepis</a>
+                <button class="przycisk-usun" onclick="usunZUlubionych()">Usuń z ulubionych</button>
+            </div>
+        </article>
+        <article class="karta-ulubiona" id="ulubiony9">
+            <img src="zdjęcia/9.jpg" alt="Kubeczki z orzechami laskowymi">
+            <div class="tresc-ulubionej">
+                <h2>Kubeczki z orzechami laskowymi</h2>
+                <a class="przycisk-link" href="przepisy.html#przepis-9">Zobacz przepis</a>
+                <button class="przycisk-usun" onclick="usunZUlubionych()">Usuń z ulubionych</button>
+            </div>
+        </article>
+        <article class="karta-ulubiona" id="ulubiony10">
+            <img src="zdjęcia/10.jpg" alt="Babeczki z porzeczkami">
+            <div class="tresc-ulubionej">
+                <h2>Babeczki z porzeczkami</h2>
+                <a class="przycisk-link" href="przepisy.html#przepis-10">Zobacz przepis</a>
+                <button class="przycisk-usun" onclick="usunZUlubionych()">Usuń z ulubionych</button>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>Babeczkowy Zakątek - Julia Stępień</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

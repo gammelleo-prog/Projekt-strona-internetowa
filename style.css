@@ -1,0 +1,330 @@
+/* PODSTAWOWE USTAWIENIA */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d8cec3;
+    color: #46332c;
+    line-height: 1.6;
+}
+
+/* NAGŁÓWEK - FLEXBOX */
+.naglowek,
+.gorny-pasek {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #f6f0e9;
+    border-bottom: 1px solid #b9a99d;
+}
+
+.link,
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #46332c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo-obrazek {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: #46332c;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* PROSTY HOVER W MENU */
+nav a:hover,
+nav a.menu,
+nav a.strona,
+nav a.aktywna-strona {
+    background-color: #b9828a;
+    color: white;
+}
+
+/* BANER - FLEXBOX */
+.baner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 10%;
+    background-color: #e9dfd3;
+}
+
+.tekst-baner {
+    width: 60%;
+}
+
+.etykieta,
+.przepisy-naglowek,
+.maly-naglowek {
+    color: #85565f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.baner h1 span {
+    color: #85565f;
+}
+
+.tekst-baner p {
+    margin-bottom: 20px;
+}
+
+.obrazek-baner {
+    width: 300px;
+    height: 300px;
+}
+
+.obrazek-baner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* LINKI I PRZYCISKI */
+.przycisk,
+.przycisk-link {
+    display: inline-block;
+    background-color: #46332c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+
+.przycisk:hover,
+.przycisk-link:hover {
+    background-color: #85565f;
+}
+
+/* SEKCJE */
+.sekcja,
+.zrodla {
+    padding: 50px 10%;
+}
+
+.naglowek-sekcji {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.przepisy-strona,
+.link-zrodla,
+.link-do-zrodla-przepisu {
+    color: #85565f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.przepisy-strona:hover,
+.link-zrodla:hover,
+.link-do-zrodla-przepisu:hover {
+    color: #46332c;
+}
+
+/* GALERIA - FLEXBOX */
+.przepisy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.zdj-przepisu {
+    width: calc(33.33% - 14px);
+    background-color: #f6f0e9;
+    border: 1px solid #b9a99d;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #46332c;
+    text-decoration: none;
+    text-align: center;
+}
+
+.zdj-przepisu img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.zdj-przepisu span {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* PROSTY HOVER NA ZDJĘCIACH */
+.zdj-przepisu:hover {
+    background-color: #cda5aa;
+}
+
+.zdj-przepisu:hover img {
+    opacity: 0.8;
+}
+
+/* O STRONIE */
+.o-stronie {
+    margin: 0 10% 50px;
+    padding: 30px;
+    background-color: #c5b4a8;
+    border-radius: 8px;
+}
+
+.lista-zrodel {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.logo-zrodlo {
+    margin-top: 15px;
+}
+
+/* PODSTRONA Z PRZEPISAMI */
+.wstep-podstrony {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.wstep-podstrony h1 {
+    font-size: 42px;
+}
+
+.lista-kart-przepisow {
+    width: 80%;
+    margin: 0 auto 50px;
+}
+
+/* KARTA PRZEPISU - FLEXBOX */
+.karta-przepisu {
+    display: flex;
+    background-color: #f6f0e9;
+    border: 1px solid #b9a99d;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.zdjecie-przepisu {
+    width: 35%;
+    object-fit: cover;
+}
+
+.tresc-przepisu {
+    width: 65%;
+    padding: 25px;
+}
+
+.opis-przepisu {
+    margin-bottom: 12px;
+}
+
+.tresc-przepisu ul,
+.tresc-przepisu ol {
+    padding-left: 25px;
+}
+
+.link-do-zrodla-przepisu {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* PRZYCISKI Z ALERTAMI */
+.przycisk-ulubionych,
+.przycisk-usun {
+    margin-top: 15px;
+    padding: 9px 13px;
+    border: 1px solid #85565f;
+    border-radius: 5px;
+    background-color: #cda5aa;
+    color: #46332c;
+    cursor: pointer;
+}
+
+.przycisk-ulubionych:hover,
+.przycisk-usun:hover {
+    background-color: #b9828a;
+    color: white;
+}
+
+/* PODSTRONA ULUBIONE - FLEXBOX */
+.lista-ulubionych {
+    width: 80%;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.karta-ulubiona {
+    width: calc(50% - 10px);
+    background-color: #f6f0e9;
+    border: 1px solid #b9a99d;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.karta-ulubiona img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.tresc-ulubionej {
+    padding: 20px;
+}
+
+.przycisk-usun {
+    margin-left: 8px;
+}
+
+.brak-ulubionych {
+    display: none;
+}
+
+/* STOPKA */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #46332c;
+    color: #e9dfd3;
+}
